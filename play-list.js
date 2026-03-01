@@ -1,0 +1,1 @@
+globalThis.customElements.define("play-list-slide", PlayListSlide);
