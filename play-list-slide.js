@@ -28,8 +28,7 @@ export class PlayListSlide extends DDDSuper((LitElement)) {
 
       .slide {
         width: 700px;
-        height: 300px;
-        border: 2px solid black;
+        height: 350px;
         padding: 20px;
         margin: 10px 0;
         background: var(--ddd-theme-default-slateLight);
@@ -60,6 +59,13 @@ export class PlayListSlide extends DDDSuper((LitElement)) {
         overflow-y: auto;
       }
 
+      .hr {
+        border: 0;
+        border-top: 2px solid var(--ddd-theme-default-skyBlue);
+        width: 80px;
+        margin: 0 0 0 40px;
+      }
+
 
     `;
   }
@@ -69,6 +75,8 @@ export class PlayListSlide extends DDDSuper((LitElement)) {
       <div class="slide">
         <h1>${this.topHeading}</h1>
         <h2>${this.secondHeading}</h2>
+            <br>
+            <hr class="hr">
         <div class="description-box">
           <slot></slot>
         </div>
